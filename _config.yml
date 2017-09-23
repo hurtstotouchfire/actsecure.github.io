@@ -18,7 +18,7 @@ projects:
   - name: protest-guide
     url: https://github.com/actsecure/protest.guide
   - name: wiki
-    url: https://github.com/victorvoid/vim-frontend
+    url: https://github.com/actsecure/actsecure/wiki
 
 # Links to include in menu navigation
 links:
