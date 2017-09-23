@@ -1,37 +1,47 @@
-###########
-# site.title, site.url, site.author.name
+# Site settings
+title:  'ActSecure'
+description: "On a quest for holistic security"
+baseurl: "" 
+url: "http://hurtstotouchfire.github.io/actsecure.github.io" 
+# for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
 
-title:   'ActSecure'
-author:
-  name:  'ActSecure'
+# User settings
+username: actsecure
+user_title: ActSecure
+email: actsecure@protonmail.com
+twitter_username: actsecure
+facebook_username: actsecure
+github_username:  actsecure
 
-## note: 
-#  use site.path in your templates to make it work for both protocols e.g. http and https
-#  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
-path: /jekyll-minimal-theme
-url:  'https://actsecure.github.io'
+# projects in header index
+projects:
+  - name: protest-guide
+    url: https://github.com/actsecure/protest.guide
+  - name: wiki
+    url: https://github.com/victorvoid/vim-frontend
 
-# http://henrythemes.github.io/jekyll-minimal-theme
+# Links to include in menu navigation
+links:
+  - title: home
+    url: /
+  - title: posts
+    url: /posts
+  - title: tags
+    url: /tags
+  - title: about us
+    url: /about
 
-########
-# more settings
-
+################################################### Build settings
 markdown: kramdown
+highlighter: rouge
+permalink: /:title/
 
-sass:
-  sass_dir: css
-  style:    expanded
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
 
-permalink: /:title.html
-
-exclude:
-- README.md
-
-safe: true
-lsi: false
-
-# Social Media
-protonmail: 'mailto:actsecure@protonmail.com'
-facebook: 'https://facebook.com/actsecure'
-twitter: 'https://twitter.com/actsecure'
-github: 'https://github.com/actsecure/'
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
